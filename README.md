@@ -3,6 +3,8 @@
 ## USE IT CAREFULLY AND WISELY. AND I AM NOT RESPONSIBLE FOR THE ACTIVITIES YOU DO WITH MY TOOL. SO YOU SHOULD BARE THE RISK OF USING MY TOOL.
 ##############################################################################################
 
+### metasploit should be installed
+
 ### Download & Install:-
   
 ### git clone https://github.com/HAKDAD/payload_generator
