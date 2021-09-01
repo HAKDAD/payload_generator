@@ -29,7 +29,7 @@ os.system('clear')
 os.system("figlet _____________")
 os.system("toilet -f big '   HAKDAD ' -F gay | lolcat")
 os.system("toilet -f big 'Payload maker ' -F gay | lolcat")
-print ("                                                     --version 1.0")
+print ("                                                     --version 2.0")
 os.system("figlet /\/\/\/\/\/\/\/\/\/\/\/\/\/////////////////")
 print
 print (" Author NAME      :   VAMSI")
