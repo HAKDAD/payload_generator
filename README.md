@@ -3,7 +3,7 @@
 ## USE IT CAREFULLY AND WISELY. AND I AM NOT RESPONSIBLE FOR THE ACTIVITIES YOU DO WITH MY TOOL. SO YOU SHOULD BARE THE RISK OF USING MY TOOL.
 ##############################################################################################
 
-### metasploit should be installed
+### metasploit and APK TOOL should be pre installed
 
 ### Download & Install:-
   
