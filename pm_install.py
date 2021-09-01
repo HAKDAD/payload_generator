@@ -37,7 +37,7 @@ subprocess.call(["apt", app, "lolcat -y"])
 subprocess.call(["apt", app, "figlet -y"])
 time.sleep(3)
 print ("\033[91m\n---- RUN THIS ONLY ONCE ----")
-
+print ("\033[91m\n---- YOU SHOULD HAVE METASPLOIT AND APK TOOL INSTALLED ----")
 print ("\033[92m\n---- REQUIREMENTS INSTALLED \nNOW USE ' python pm_main.py ' TO USE THE TOOL ----")
 ##############################################
 ##############################################
